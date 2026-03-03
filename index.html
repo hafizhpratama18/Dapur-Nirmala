@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Nirmala - Warung Makan Enak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="nirmala.png" alt="Nirmala Kitchen Logo" class="logo-img">
+                <span class="logo-text">Dapur Nirmala</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="navigateTo('home')" class="nav-link active">Beranda</a></li>
+                <li><a href="#" onclick="navigateTo('tentang')" class="nav-link">Tentang</a></li>
+                <li><a href="#" onclick="navigateTo('menu')" class="nav-link">Menu</a></li>
+                <li><a href="#" onclick="navigateTo('kontak')" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pages Container -->
+    <div class="pages-container">
+        <!-- Home Page -->
+        <section id="home-page" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-logo-container animate-text">
+                        <img src="nirmala.png" alt="Nirmala Kitchen Logo" class="hero-logo">
+                    </div>
+                    <h1 class="animate-text-delay">Dapur Nirmala</h1>
+                    <p class="animate-text-delay2">Nikmati kelezatan masakan rumahan dengan cita rasa istimewa</p>
+                    <button onclick="navigateTo('menu')" class="btn-primary animate-text-delay3">Lihat Menu</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Page -->
+        <section id="tentang-page" class="page">
+            <div class="container">
+                <h2 class="section-title">Tentang Kami</h2>
+
+                <!-- Logo Section dengan Makna Logo -->
+                <div class="logo-section fade-in">
+                    <img src="nirmala.png" alt="Dapur Nirmala Logo" class="about-logo">
+                    <div class="logo-description">
+                        <h3>Makna Logo Nirmala Kitchen</h3>
+                        <div class="logo-meaning">
+                            <div class="meaning-item">
+                                <h4>🍳 Simbol Topi Koki (Chef Hat)</h4>
+                                <p>Topi koki merupakan simbol universal untuk keahlian dan profesionalisme. Garis oranye pada topi menunjukkan bahwa masakan dikelola oleh orang yang memiliki passion dan kemampuan di bidang kuliner. Bentuknya yang agak melengkung memberikan kesan ramah (friendly) dan tidak kaku.</p>
+                            </div>
+                            
+                            <div class="meaning-item">
+                                <h4>🍽️ Elemen Garpu dan Sendok</h4>
+                                <p>Terletak di bagian bawah dengan gaya ilustrasi yang santai. Melambangkan kesiapan untuk menyantap. Penempatan sendok dan garpu yang sejajar horizontal memberikan kesan keseimbangan dan kepuasan setelah makan. Titik-titik kecil di sekitarnya dapat diartikan sebagai bumbu atau remah makanan yang lezat, menambah kesan rasa yang kaya.</p>
+                            </div>
+                            
+                            <div class="meaning-item">
+                                <h4>🎨 Psikologi Warna</h4>
+                                <ul class="color-list">
+                                    <li><span class="color-dot purple"></span> <strong>Ungu (Background):</strong> Warna ungu sering dikaitkan dengan kreativitas, kualitas premium, dan keunikan. Ini membedakan "Nirmala Kitchen" dari kompetitor kuliner lain yang biasanya menggunakan warna merah atau kuning.</li>
+                                    <li><span class="color-dot orange"></span> <strong>Oranye/Kuning Tua:</strong> Melambangkan kehangatan, keceriaan, dan nafsu makan. Warna ini memberikan kontras yang cerah sehingga logo terlihat segar.</li>
+                                    <li><span class="color-dot white"></span> <strong>Putih:</strong> Melambangkan kemurnian dan kebersihan, sejalan dengan arti nama Nirmala.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="meaning-item">
+                                <h4>📝 Makna Nama "Nirmala"</h4>
+                                <p>Dalam bahasa Sansekerta, <strong>Nirmala</strong> berarti bersih, suci, atau tanpa cacat. Nama ini menyiratkan komitmen dapur terhadap kebersihan bahan baku dan proses memasak yang higienis. Hal ini memberikan rasa aman bagi konsumen bahwa makanan yang disajikan murni dan dibuat dengan niat baik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rating Section dengan Foto Ulasan -->
+<div class="rating-section fade-in">
+    <h3>⭐ Ulasan Pelanggan Kami</h3>
+    
+    <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+            <div class="review-photo">
+                <img src="rating1.png" alt="Review 1" onerror="this.src='https://via.placeholder.com/300x300/8e44ad/ffffff?text=Review+1'">
+            </div>
+            <div class="review-content">
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <div class="review-photo">
+                <img src="rating2.png" alt="Review 2" onerror="this.src='https://via.placeholder.com/300x300/3498db/ffffff?text=Review+2'">
+            </div>
+            <div class="review-content">
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rating Stats -->
+    <div class="rating-stats">
+        <div class="rating-average">
+            <span class="big-star">★</span>
+            <span class="average-number">4.9</span>
+            <span class="average-text">/5.0</span>
+        </div>
+        <div class="rating-total">500+ ulasan</div>
+        <div class="rating-badge">Telah dipercaya oleh ratusan pelanggan setia</div>
+    </div>
+</div>
+
+                <!-- Sejarah -->
+                <div class="about-card fade-in">
+                    <h3>📜 Sejarah Berdirinya</h3>
+                    <p>Perjalanan usaha ini didasari oleh semangat kemandirian seorang ibu rumah tangga bernama <strong>Asri</strong> yang ingin memiliki penghasilan sendiri tanpa meninggalkan tanggung jawab keluarga. Sebelum memantapkan diri di industri kuliner, usaha ini sempat melewati fase eksplorasi dengan memasarkan berbagai produk, mulai dari perlengkapan ibadah (mukena) hingga kebutuhan hewan peliharaan (makanan kucing). Namun, melihat minat pasar yang belum optimal, dilakukan evaluasi strategi untuk beralih ke bidang yang lebih menjanjikan.</p>
+                    <p>Pada tahun 2023, usaha ini resmi memfokuskan diri di bidang makanan. Langkah awal dimulai dengan skala kecil, yaitu menitipkan produk di warung-warung dengan target pasar utama anak sekolah. Sebagaimana tantangan usaha pada umumnya, fase awal dilalui dengan penuh perjuangan; di mana produk seringkali hanya terjual satu atau dua porsi per hari.</p>
+                    <p>Berkat ketekunan dalam mengamati selera pasar dan konsistensi menjaga kualitas rasa, kepercayaan pelanggan perlahan mulai terbangun. Dari titik terendah tersebut, usaha ini terus berkembang hingga kini mampu melayani banyak pesanan secara stabil dan tetap eksis di tengah persaingan pasar kuliner.</p>
+                </div>
+
+                <!-- Visi & Misi -->
+                <div class="vision-mission">
+                    <div class="vision-card fade-in">
+                        <h3>🎯 Visi</h3>
+                        <p>Menjadi penyedia makanan enak dan bergizi yang menjadi pilihan utama masyarakat dengan mengutamakan kualitas bahan baku.</p>
+                    </div>
+                    
+                    <div class="mission-card fade-in">
+                        <h3>⭐ Misi</h3>
+                        <ul>
+                            <li>Memastikan seluruh proses pengolahan makanan menggunakan bahan yang 100% halal dan bebas dari bahan pengawet berbahaya.</li>
+                            <li>Memberikan kepastian waktu dalam penyiapan pesanan agar pelanggan tidak menunggu lama.</li>
+                            <li>Menggunakan kemasan yang tidak hanya estetik, tetapi juga mampu menjaga kualitas, suhu, dan kebersihan makanan sampai ke tangan konsumen.</li>
+                            <li>Menjaga kebersihan dan kenyamanan tempat makan.</li>
+                            <li>Memberikan harga terjangkau untuk semua kalangan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Analisis SWOT -->
+                <div class="fade-in">
+                    <h3 style="text-align: center; margin: 2rem 0 1rem;">📊 Analisis SWOT Dapur Nirmala</h3>
+                    <div class="swot-container">
+                        <div class="swot-item strength">
+                            <h4>💪 Strength (Kekuatan)</h4>
+                            <ul>
+                                <li>Memiliki variasi menu yang lengkap mulai dari makanan berat hingga dessert.</li>
+                                <li>Visual presentasi produk sangat menarik dan terlihat premium.</li>
+                                <li>Harga jual sangat kompetitif dan terjangkau bagi berbagai kalangan.</li>
+                            </ul>
+                        </div>
+
+                        <div class="swot-item weakness">
+                            <h4>⚠️ Weakness (Kelemahan)</h4>
+                            <ul>
+                                <li>Masa simpan produk dessert berbasis susu dan agar-agar cenderung singkat.</li>
+                                <li>Proses pengemasan memerlukan ketelitian ekstra agar tampilan pasta dan puding tidak rusak saat pengiriman.</li>
+                            </ul>
+                        </div>
+
+                        <div class="swot-item opportunity">
+                            <h4>🌟 Opportunity (Peluang)</h4>
+                            <ul>
+                                <li>Tingginya minat masyarakat terhadap makanan praktis siap saji (ready to eat).</li>
+                                <li>Potensi pesanan besar untuk acara kantor, arisan, atau hampers hari raya.</li>
+                                <li>Peluang kolaborasi dengan layanan pengiriman online untuk memperluas jangkauan pasar.</li>
+                            </ul>
+                        </div>
+
+                        <div class="swot-item threat">
+                            <h4>⚠️ Threat (Ancaman)</h4>
+                            <ul>
+                                <li>Kenaikan harga bahan baku utama yang dapat mempengaruhi margin keuntungan.</li>
+                                <li>Munculnya tren makanan baru yang bisa mengalihkan perhatian konsumen dari menu pasta.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Struktur Perusahaan -->
+                <div class="organization-chart fade-in">
+                    <h3 style="text-align: center; margin-bottom: 2rem;">🏢 Struktur Perusahaan</h3>
+                    
+                    <div class="org-level">
+                        <h4>👩‍🍳 Pemilik/Founder</h4>
+                        <p><strong>Ibu Asri</strong> - Founder & Head Chef</p>
+                        <p>Bertanggung jawab atas keseluruhan operasional, pengembangan resep, dan kontrol kualitas.</p>
+                    </div>
+
+                    <div class="org-level">
+                        <h4>👨‍🍳 Divisi Produksi</h4>
+                        <p><strong>Ibu Asri</strong> (1 orang) - Chef </p>
+                        <p>Bertugas menyiapkan dan memasak semua menu sesuai standar resep dan kualitas.</p>
+                    </div>
+
+                    <div class="org-level">
+                        <h4>📦 Divisi Pengemasan & Pengiriman</h4>
+                        <p><strong>Eki</strong> (1 orang)</p>
+                        <p>Bertugas mengemas produk dengan rapi dan higienis serta mengantar pesanan ke konsumen.</p>
+                    </div>
+
+                    <div class="org-level">
+                        <h4>📱 Divisi Pemasaran & Admin</h4>
+                        <p><strong>Rahma</strong> (1 orang)</p>
+                        <p>Bertugas mengelola media sosial, menerima pesanan, dan menangani customer service.</p>
+                    </div>
+
+
+                <!-- Tujuan -->
+                <div class="goal-card fade-in">
+                    <h3>🏆 Tujuan Kami</h3>
+                    <div class="goals-grid">
+                        <div class="goal-item">
+                            <h4>Kualitas Produk</h4>
+                            <p>Menghasilkan produk makanan yang lezat, higienis, dan sesuai dengan daya beli target pasar, khususnya pelajar dan masyarakat umum.</p>
+                        </div>
+                        <div class="goal-item">
+                            <h4>Kemandirian Ekonomi</h4>
+                            <p>Membangun usaha yang dapat memberdayakan keluarga dan masyarakat sekitar melalui lapangan pekerjaan.</p>
+                        </div>
+                        <div class="goal-item">
+                            <h4>Kepercayaan Pelanggan</h4>
+                            <p>Membangun hubungan jangka panjang dengan pelanggan berdasarkan kepercayaan dan kualitas yang konsisten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Page -->
+        <section id="menu-page" class="page">
+            <div class="container">
+                <h2 class="section-title">Menu Favorit Kami</h2>
+                
+                <!-- Category Filter -->
+                <div class="menu-categories">
+                    <button class="category-btn active" onclick="filterMenu('all')">Semua</button>
+                    <button class="category-btn" onclick="filterMenu('minuman')">Minuman</button>
+                    <button class="category-btn" onclick="filterMenu('makanan')">Makanan</button>
+                    <button class="category-btn" onclick="filterMenu('dessert')">Dessert</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-container">
+                    <!-- Minuman -->
+                    <div class="menu-card fade-in" data-category="minuman">
+                        <div class="menu-image">
+                            <img src="Es Lumut.png" alt="Es Lumut">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Es Lumut</h3>
+                            <p class="menu-desc">Minuman segar dengan campuran jelly dan sirup spesial</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 10.000</span>
+                                <button class="order-btn" onclick="orderNow('Es Lumut', 10000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="minuman">
+                        <div class="menu-image">
+                            <img src="Susu Kurma.png" alt="Susu Kurma">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Susu Kurma</h3>
+                            <p class="menu-desc">Minuman sehat perpaduan susu dan kurma pilihan</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 15.000</span>
+                                <button class="order-btn" onclick="orderNow('Susu Kurma', 15000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dessert -->
+                    <div class="menu-card fade-in" data-category="dessert">
+                        <div class="menu-image">
+                            <img src="Pudding Susu.png" alt="Pudding Susu">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Pudding Susu</h3>
+                            <p class="menu-desc">Puding susu lembut dengan saus vla vanilla</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 3.000</span>
+                                <button class="order-btn" onclick="orderNow('Pudding Susu', 3000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="dessert">
+                        <div class="menu-image">
+                            <img src="Pudding Silverqueen.png" alt="Pudding Silverqueen">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Pudding Silverqueen</h3>
+                            <p class="menu-desc">Puding coklat dengan topping silverqueen</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 5.000</span>
+                                <button class="order-btn" onclick="orderNow('Pudding Silverqueen', 5000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Makanan -->
+                    <div class="menu-card fade-in" data-category="makanan">
+                        <div class="menu-image">
+                            <img src="spaghetti.png" alt="Spaghetti">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Spaghetti</h3>
+                            <p class="menu-desc">Spaghetti dengan saus bolognese klasik</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 13.000</span>
+                                <button class="order-btn" onclick="orderNow('Spaghetti', 13000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="makanan">
+                        <div class="menu-image">
+                            <img src="spaghetti Carbonara.png" alt="Spaghetti Carbonara">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p class="menu-desc">Spaghetti dengan saus carbonara creamy</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 13.000</span>
+                                <button class="order-btn" onclick="orderNow('Spaghetti Carbonara', 13000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="makanan">
+                        <div class="menu-image">
+                            <img src="spaghetti Chicken Katsu.png" alt="Spaghetti Chicken Katsu">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Spaghetti Chicken Katsu</h3>
+                            <p class="menu-desc">Spaghetti dengan topping chicken katsu</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 15.000</span>
+                                <button class="order-btn" onclick="orderNow('Spaghetti Chicken Katsu', 15000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="makanan">
+                        <div class="menu-image">
+                            <img src="Kentang Cordon Blue.png" alt="Kentang Cordon Blue">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Kentang Cordon Blue</h3>
+                            <p class="menu-desc">Kentang isi keju dan daging asap</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 15.000</span>
+                                <button class="order-btn" onclick="orderNow('Kentang Cordon Blue', 15000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="makanan">
+                        <div class="menu-image">
+                            <img src="Macaroni Schotel.png" alt="Macaroni Schotel">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Macaroni Schotel</h3>
+                            <p class="menu-desc">MakaronI panggang dengan saus keju</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 15.000</span>
+                                <button class="order-btn" onclick="orderNow('Macaroni Schotel', 15000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card fade-in" data-category="makanan">
+                        <div class="menu-image">
+                            <img src="Lasagna Kukus.png" alt="Lasagna Kukus">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Lasagna Kukus</h3>
+                            <p class="menu-desc">Lasagna lembut dengan saus daging cincang</p>
+                            <div class="menu-footer">
+                                <span class="price">Rp 25.000</span>
+                                <button class="order-btn" onclick="orderNow('Lasagna Kukus', 25000)">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QRIS di halaman Menu -->
+                <div class="qris-container fade-in">
+                    <h3>💳 Pembayaran QRIS</h3>
+                    <div class="qris-badge">Scan untuk bayar</div>
+                    <div class="qris-placeholder">
+                        [QRIS DAPUR NIRMALA]
+                    </div>
+                    <p>Scan QRIS di atas untuk pembayaran non-tunai</p>
+                    <p style="font-size: 0.9rem; color: #666;">Tersedia: OVO, GoPay, Dana, ShopeePay, dan Mobile Banking</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Page -->
+        <section id="kontak-page" class="page">
+            <div class="container">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <div class="contact-container">
+                    <div class="contact-info fade-in">
+                        <h3>Informasi Kontak</h3>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <p>Jl. Media Raya Blok ZZ No 13 RT 04 RW 016</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <p>0896-3562-0494</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⏰</span>
+                            <p>Buka Setiap Hari: 10.00 - 22.00 WIB</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <p>dapurnirmala@gmail.com</p>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Ikuti Kami</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-link">📷 Instagram</a>
+                                <a href="#" class="social-link">👍 Facebook</a>
+                                <a href="#" class="social-link">🐦 Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form fade-in">
+                        <h3>Kirim Pesan</h3>
+                        <form onsubmit="sendMessage(event)">
+                            <input type="text" placeholder="Nama Anda" required>
+                            <input type="email" placeholder="Email Anda" required>
+                            <textarea rows="4" placeholder="Pesan Anda" required></textarea>
+                            <button type="submit" class="btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-container fade-in">
+                    <h3>Lokasi Kami</h3>
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0393496047727!2d106.88152076980138!3d-6.38892404832277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb67d6942e01%3A0xf876928ffe951b1d!2sJl.%20Media%20Raya%20Blok%20Zz%20No.13%2C%20RT.4%2FRW.16%2C%20Sukatani%2C%20Kec.%20Tapos%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016454!5e0!3m2!1sid!2sid!4v1772512354656!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dapur Nirmala. Semua hak dilindungi.</p>
+            <p>Dibuat dengan ❤️ untuk pecinta kuliner Indonesia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
