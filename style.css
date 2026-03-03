@@ -1452,3 +1452,422 @@ footer p:first-child {
 .gallery-item:hover::after {
     transform: translateY(0);
 }
+/* ========================= */
+/* CSS untuk Foto Poster */
+/* ========================= */
+.poster-photo-frame {
+    max-width: 200px;
+    width: 60%;        /* Responsif */
+    margin: 0 auto 50px auto;
+    position: relative;
+}
+
+.photo-wrapper {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border: 5px solid #ffd700;
+    transition: all 0.3s ease;
+    background: #f5f5f5; /* Background jika gambar transparan */
+}
+
+.photo-wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px rgba(106, 13, 173, 0.4);
+}
+
+.menu-poster-photo {
+    width: 100%;
+    height: auto;
+    max-height: 600px;    /* Batasi tinggi maksimal */
+    object-fit: contain;  /* Pastikan gambar tidak terpotong */
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.photo-wrapper:hover .menu-poster-photo {
+    transform: scale(1.03);
+}
+
+.photo-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #6a0dad;
+    font-weight: 800;
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px solid white;
+    animation: pulse 2s infinite;
+    z-index: 10;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ========================= */
+/* Opsi Tambahan: Poster dengan Bingkai Mewah */
+/* ========================= */
+.poster-luxury-frame {
+    max-width: 850px;
+    width: 95%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.luxury-border {
+    background: linear-gradient(135deg, #6a0dad, #8e44ad, #ffd700, #ffed4e);
+    padding: 8px;
+    border-radius: 40px;
+    animation: gradientShift 5s infinite;
+    box-shadow: 0 25px 50px rgba(106, 13, 173, 0.3);
+}
+
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(135deg, #6a0dad, #8e44ad, #ffd700, #ffed4e);
+    }
+    50% {
+        background: linear-gradient(135deg, #ffd700, #ffed4e, #6a0dad, #8e44ad);
+    }
+    100% {
+        background: linear-gradient(135deg, #6a0dad, #8e44ad, #ffd700, #ffed4e);
+    }
+}
+
+.inner-border {
+    background: white;
+    padding: 15px;
+    border-radius: 35px;
+    border: 3px solid #ffd700;
+}
+
+.luxury-poster {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    display: block;
+    border-radius: 25px;
+    background: #f8f8f8;
+}
+
+.frame-decoration {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.decoration-left, .decoration-right {
+    font-size: 2rem;
+    animation: sparkle 1.5s infinite;
+}
+
+.decoration-text {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #6a0dad;
+    text-shadow: 2px 2px 0 #ffd700;
+    letter-spacing: 1px;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+/* ========================= */
+/* Opsi: Poster dengan Caption */
+/* ========================= */
+.poster-caption-frame {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.poster-image-container {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    border: 4px solid white;
+}
+
+.poster-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+    display: block;
+    background: #f0f0f0;
+}
+
+.poster-caption-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(106, 13, 173, 0.1);
+    border-radius: 50px;
+    color: #6a0dad;
+    font-weight: 600;
+    font-size: 1.1rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.poster-caption-bottom span {
+    background: #ffd700;
+    color: #6a0dad;
+    padding: 5px 15px;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+/* ========================= */
+/* Opsi: Poster Full Width */
+/* ========================= */
+.poster-full-frame {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+.poster-full-wrapper {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    border: 6px solid #ffd700;
+}
+
+.poster-full-image {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+    display: block;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+}
+
+.poster-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(106, 13, 173, 0.9), transparent);
+    padding: 30px 20px 20px;
+    text-align: center;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.poster-full-wrapper:hover .poster-overlay {
+    transform: translateY(0);
+}
+
+.poster-overlay h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.poster-overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.poster-overlay-btn {
+    background: #ffd700;
+    color: #6a0dad;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.poster-overlay-btn:hover {
+    transform: scale(1.05);
+    background: white;
+}
+
+/* ========================= */
+/* Responsive untuk Semua Opsi */
+/* ========================= */
+@media (min-width: 1200px) {
+    .poster-photo-frame,
+    .poster-luxury-frame,
+    .poster-caption-frame {
+        max-width: 900px;
+    }
+    
+    .poster-full-frame {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .poster-photo-frame,
+    .poster-luxury-frame,
+    .poster-caption-frame {
+        max-width: 700px;
+    }
+    
+    .menu-poster-photo,
+    .luxury-poster {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .poster-photo-frame,
+    .poster-luxury-frame,
+    .poster-caption-frame {
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+    
+    .photo-wrapper {
+        border-width: 4px;
+    }
+    
+    .photo-badge {
+        top: 10px;
+        right: 10px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .menu-poster-photo,
+    .luxury-poster {
+        max-height: 400px;
+    }
+    
+    .luxury-border {
+        padding: 5px;
+    }
+    
+    .inner-border {
+        padding: 10px;
+    }
+    
+    .frame-decoration {
+        gap: 10px;
+    }
+    
+    .decoration-left, .decoration-right {
+        font-size: 1.5rem;
+    }
+    
+    .decoration-text {
+        font-size: 1rem;
+    }
+    
+    .poster-overlay {
+        padding: 20px 15px 15px;
+    }
+    
+    .poster-overlay h4 {
+        font-size: 1.2rem;
+    }
+    
+    .poster-overlay p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .poster-photo-frame,
+    .poster-luxury-frame,
+    .poster-caption-frame {
+        max-width: 100%;
+    }
+    
+    .photo-wrapper {
+        border-width: 3px;
+        border-radius: 20px;
+    }
+    
+    .menu-poster-photo,
+    .luxury-poster {
+        max-height: 300px;
+    }
+    
+    .photo-badge {
+        top: 5px;
+        right: 5px;
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .luxury-border {
+        border-radius: 25px;
+    }
+    
+    .inner-border {
+        padding: 8px;
+        border-radius: 20px;
+    }
+    
+    .decoration-left, .decoration-right {
+        font-size: 1.2rem;
+    }
+    
+    .decoration-text {
+        font-size: 0.9rem;
+    }
+    
+    .poster-caption-bottom {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    
+    .poster-caption-bottom span {
+        display: block;
+        margin: 10px 0 0 0;
+    }
+}
+
+/* ========================= */
+/* Utility Classes */
+/* ========================= */
+.poster-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-shadow-hover {
+    transition: all 0.3s ease;
+}
+
+.poster-shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(106, 13, 173, 0.4);
+}
